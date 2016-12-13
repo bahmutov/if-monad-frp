@@ -1,12 +1,10 @@
+import xs from 'xstream'
 const f = () => console.log('it is true')
 const g = () => console.log('nope')
-const condition = true
 
-import xs from 'xstream'
-
-var s$ = xs.of(condition, !condition)
-var truthy$ = s$.filter(c => c)
-var falsy$ = s$.filter(c => !c)
+const s$ = xs.of(true, false, true)
+const truthy$ = s$.filter(c => c)
+const falsy$ = s$.filter(c => !c)
 
 truthy$.addListener({
   next: f
