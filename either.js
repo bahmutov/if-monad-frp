@@ -1,0 +1,17 @@
+const Either = require('data.either')
+
+const f = () => console.log('it is true')
+const g = () => console.log('nope')
+const condition = false
+
+// separate condition
+function truthyEither(c) {
+  return c ? Either.Right() : Either.Left()
+}
+
+truthyEither(condition)
+  .fold(g, f)
+
+// don't need much logic if just "truthy" predicate
+// but .fromNullable only looks at "null" and "undefined" values
+// Either.fromNullable(condition)
