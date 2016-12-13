@@ -224,6 +224,15 @@ Now we just need to start the events flowing, which we can do by adding
 listeners to the above two streams.
 
 ```js
+truthy$.addListener({
+  next: f
+})
+falsy$.addListener({
+  next: g
+})
+```
+
+```sh
 $(npm bin)/babel-node frp.js
 it is true
 it is true
