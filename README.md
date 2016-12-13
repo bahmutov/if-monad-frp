@@ -236,6 +236,11 @@ In the real world situation, the events are usually generated via async
 events, thus the order in which the streams `truthy$` and `falsy$`
 execute are closer to the input events order.
 
+## Related
+
+* [JavaScript Journey](https://github.com/bahmutov/javascript-journey) - repo
+  with the same small example implemented in different programming styles.
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2016
