@@ -88,7 +88,7 @@ Notice that the "false" branch function `g` is at the first position (that
 is why it is called "Left"), while the "true" branch function `f` is the second.
 
 ```js
-.fold(falseBranchFunction, trueBrunchFunction)
+.fold(falseBranchFunction, trueBranchFunction)
 ```
 
 What if we want to run more functions in the "true" branch, which is common.
